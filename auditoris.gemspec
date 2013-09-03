@@ -13,10 +13,14 @@ Gem::Specification.new do |s|
   s.summary     = "ActiveRecord extension for audith"
   s.description = "This gem implement a specific approach to models audits."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
+
+  s.require_paths = ["lib"]
 
   s.add_dependency "rails", "~> 3.2.14"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
 end
