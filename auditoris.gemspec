@@ -7,11 +7,11 @@ require "auditoris/version"
 Gem::Specification.new do |s|
   s.name        = "auditoris"
   s.version     = Auditoris::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Auditoris."
-  s.description = "TODO: Description of Auditoris."
+  s.authors     = ["Angel Arancibia"]
+  s.email       = ["angel.arancibia@gmail.com"]
+  s.homepage    = "https://github.com/angel-arancibia/auditoris"
+  s.summary     = "ActiveRecord extension for audith"
+  s.description = "This gem implement a specific approach to models audits."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
